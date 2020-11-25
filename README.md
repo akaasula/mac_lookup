@@ -2,6 +2,8 @@
 
 ## This application takes the mac address as input, looks up in https://macaddress.io/  and provides you the vendor details like company name.
 
+#### _For this application you need to install docker and git in you linux system_
+
 ### Usage and Requirements
 #### 1. Install Docker
 Use the following commands for docker installation in your linux 
@@ -38,6 +40,7 @@ Run the following commands for clonning the files from git hub.
 `git clone https://github.com/akaasula/mac_lookup.git`
 
 Then, run these commands one after the other to build the docker and run it.
+
 `cd mac_lookup/`
 
 `sudo docker build . -t mac_lookup`
