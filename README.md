@@ -47,7 +47,7 @@ Then, run these commands one after the other to build the docker and run it.
 
 `sudo docker build . -t mac_lookup`
 
-`docker run -it mac_lookup`
+`sudo docker run -it mac_lookup`
 
 
 
