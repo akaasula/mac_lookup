@@ -20,6 +20,7 @@ Now to install docker, enter the following command in the terminal
 The Docker service needs to be setup to run at startup. To do so, type in each command followed by enter:
 
 `sudo systemctl start docker`
+
 `sudo systemctl enable docker`
 
 
@@ -27,6 +28,7 @@ The Docker service needs to be setup to run at startup. To do so, type in each c
 Use the following commands to install git in your linux server 
 
 `sudo apt update`
+
 `sudo apt install git`
 
 To verify whether git is installed or not, use the following command
