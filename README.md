@@ -6,6 +6,8 @@
 #### 1. Install Docker
 Use the following commands for docker installation in your linux 
 >sudo apt-get update
+
+
 Next, it’s recommended to uninstall any old Docker software before proceeding.
 
 >sudo apt-get remove docker docker-engine docker.io
