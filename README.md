@@ -2,9 +2,8 @@
 
 ## This application takes the mac address as input, looks up in https://macaddress.io/  and provides you the vendor details like company name.
 
-#### _For this application you need to install docker and git in you linux system_
+#### _For this application you need to install docker and git in your linux system_
 
-### Usage and Requirements
 #### 1. Install Docker
 Use the following commands for docker installation in your linux 
 `sudo apt-get update`
