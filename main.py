@@ -1,17 +1,25 @@
-# This is a sample Python script.
+
 import requests
 import json
-mac_address = input("Enter you mac address:")
-url = "https://api.macaddress.io/v1?apiKey=at_cXLD3nVupldPOnSjojjgnqlVlazpe&output=json&search="
-url=url+mac_address
+import re
+mac_address = input('Please enter a MAC address, (Example xx:xx:xx:xx:xx:xx )\n')
+while mac_address!=None:
+    valid = re.match('(?=[a-f0-9]{2}:){5}[a-f0-9]{2}', mac_address, re.I)
+    url = "https://api.macaddress.io/v1?apiKey=at_cXLD3nVupldPOnSjojjgnqlVlazpe&output=json&search="
+    url = url + mac_address
 
-payload = {}
-headers = {}
+    payload = {}
+    headers = {}
 
-response = requests.request("GET", url, headers=headers, data = payload)
+    response = requests.request("GET", url, headers=headers, data=payload)
 
-output = json.loads(response.text.encode('utf8'))
+    output = json.loads(response.text.encode('utf8'))
+    if output["vendorDetails"]["companyName"]=="":
+        print("Invalid mac address or doesnt belongs to any vendor")
+    else:
+        print('This mac address, {} belongs to: \n '.format(mac_address) + output["vendorDetails"]["companyName"])
+        break
 
-print(mac_address, output["vendorDetails"]["companyName"])
+
 
 
