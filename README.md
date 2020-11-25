@@ -39,7 +39,10 @@ Run the following commands for clonning the files from git hub.
 >git clone https://github.com/akaasula/mac_lookup.git
 
 Then, run these commands one after the other to build the docker and run it.
->docker build -t mac_lookup
+>cd mac_lookup/
+
+
+>sudo docker build . -t mac_lookup
 
 
 >docker run -it mac_lookup
