@@ -50,7 +50,7 @@ Then, run these commands one after the other to build the docker and run it.
 `sudo docker run -it mac_lookup`
 
 
-### ABout this application:
+### About this application:
 * Validates mac address entered by the user
 * Provides comany name of the mac address entered 
 
