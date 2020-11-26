@@ -22,15 +22,7 @@ while mac_address!=None:
     except requests.exceptions.HTTPError:
         print("Http Error!, Status code: ", response.status_code)
         break
-    except requests.exceptions.ConnectionError:
-        print("Connection Error..!!")
-        break
-    except requests.exceptions.Timeout:
-        print("Timeout Error..!!")
-        break
-    except requests.exceptions.RequestException as err:
-        print("OOps: Something Else : ", err)
-        break
+        
 
 
 
